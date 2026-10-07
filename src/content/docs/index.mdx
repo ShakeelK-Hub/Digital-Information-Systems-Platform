@@ -1,40 +1,35 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
-template: splash # Remove or comment out this line to display the site sidebar on this page.
+title: "[Site headline]"
+description: "[One sentence]"
+template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
-  image:
-    file: ../../assets/houston.webp
+  tagline: "[Two sentences: who this resource is for and what it helps them do]"
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: Start reading
+      link: /data-information/overview/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
-      variant: minimal
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { LinkCard, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+## Topics
 
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Change page layout" icon="document">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+<CardGrid>
+  <LinkCard title="Data and information management" description="[One line: what the reader gains]" href="/data-information/overview/" />
+  <LinkCard title="Data ethics, privacy and POPIA" description="[One line: what the reader gains]" href="/ethics-popia/" />
+  <LinkCard title="AI and decision support systems" description="[One line: what the reader gains]" href="/ai-decision-support/" />
+  <LinkCard title="Enterprise systems and IS integration" description="[One line: what the reader gains]" href="/enterprise-integration/" />
+  <LinkCard title="Adapting and customising information systems" description="[One line: what the reader gains]" href="/adapting-systems/" />
 </CardGrid>
+
+## [Heading: who this resource is for]
+
+[Describe the client and their situation in your own words.]
+
+## [Heading: how to use this resource]
+
+[Tell the reader how to move around the site and what to expect.]
+
+:::tip[Key takeaway]
+[One-sentence promise of what the reader will gain.]
+:::

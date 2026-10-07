@@ -1,0 +1,225 @@
+/* ==========================================================================
+   Site styling v2: modern, smooth, polished.
+   Headings: Fraunces (elegant serif). Body and menus: Plus Jakarta Sans.
+   Edit the colours in the :root blocks to re-skin everything.
+   Effects are subtle and switch off for people who prefer reduced motion.
+   ========================================================================== */
+
+/* ---- Fonts (stored in public/fonts so the site works offline) ----------- */
+@font-face { font-family: "Fraunces"; font-weight: 600; font-style: normal; font-display: swap;
+  src: url("/fonts/fraunces-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Fraunces"; font-weight: 700; font-style: normal; font-display: swap;
+  src: url("/fonts/fraunces-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Fraunces"; font-weight: 600; font-style: italic; font-display: swap;
+  src: url("/fonts/fraunces-latin-600-italic.woff2") format("woff2"); }
+@font-face { font-family: "Plus Jakarta Sans"; font-weight: 400; font-display: swap;
+  src: url("/fonts/plus-jakarta-sans-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Plus Jakarta Sans"; font-weight: 500; font-display: swap;
+  src: url("/fonts/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Plus Jakarta Sans"; font-weight: 600; font-display: swap;
+  src: url("/fonts/plus-jakarta-sans-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Plus Jakarta Sans"; font-weight: 700; font-display: swap;
+  src: url("/fonts/plus-jakarta-sans-latin-700-normal.woff2") format("woff2"); }
+
+:root {
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --sl-font: "Plus Jakarta Sans", "Segoe UI", system-ui, sans-serif;
+  --sl-text-body: 1.0625rem;
+  --sl-line-height: 1.75;
+
+  --navy-deep: #0b1d33;
+  --royal: #2b4c9b;
+  --gold: #f2b632;
+  --gold-soft: #fff7e0;
+}
+
+/* ---- Colours: light mode ------------------------------------------------ */
+:root[data-theme='light'] {
+  --sl-color-accent-low: #e3e9f7;
+  --sl-color-accent: #2b4c9b;
+  --sl-color-accent-high: #1b3478;
+  --sl-color-bg: #f7f8fc;
+  --sl-color-bg-nav: rgba(255, 255, 255, 0.82);
+  --sl-color-bg-sidebar: #ffffff;
+  --sl-color-hairline: #dde3ef;
+}
+
+/* ---- Colours: dark mode ------------------------------------------------- */
+:root[data-theme='dark'] {
+  --sl-color-accent-low: #16294f;
+  --sl-color-accent: #6f8fe0;
+  --sl-color-accent-high: #c3d2f6;
+}
+
+/* ---- Headings ------------------------------------------------------------- */
+h1, h2, h3,
+.sl-markdown-content :is(h1, h2, h3) {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+h3, .sl-markdown-content h3 { font-weight: 600; }
+:root[data-theme='light'] :is(h1, h2, h3, .site-title) { color: var(--navy-deep); }
+
+/* Gold accent under every page title */
+h1[data-page-title]::after {
+  content: "";
+  display: block;
+  width: 72px; height: 4px; margin-top: 0.9rem;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--gold), #ffd978);
+}
+
+.site-title { font-family: var(--font-display); font-weight: 700; font-size: 1.25rem; }
+
+/* ---- Header: frosted glass with a gold hairline ---------------------------- */
+header.header {
+  backdrop-filter: blur(14px) saturate(1.4);
+  -webkit-backdrop-filter: blur(14px) saturate(1.4);
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(90deg, var(--gold), var(--royal), var(--gold)) 1;
+}
+
+/* ---- Home hero: full-width gradient band with a slow glow -------------------- */
+main { overflow-x: clip; }
+
+.hero { position: relative; isolation: isolate; padding-block: clamp(3rem, 8vw, 6.5rem); }
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  top: calc(-1 * var(--sl-content-pad-y, 1.5rem)); bottom: 0;
+  left: 50%; width: 100vw; transform: translateX(-50%);
+  z-index: -1;
+}
+.hero::before {
+  background:
+    radial-gradient(900px circle at 10% 10%, rgba(116, 96, 230, 0.34), transparent 58%),
+    radial-gradient(1000px circle at 88% 85%, rgba(111, 143, 224, 0.35), transparent 55%),
+    linear-gradient(135deg, #0b1d33 0%, #132d57 55%, #1d3f87 100%);
+}
+.hero::after {
+  background:
+    radial-gradient(460px circle at 72% 28%, rgba(140, 175, 255, 0.28), transparent 62%),
+    radial-gradient(380px circle at 28% 78%, rgba(242, 182, 50, 0.14), transparent 62%);
+  animation: glow-drift 16s ease-in-out infinite alternate;
+}
+@keyframes glow-drift {
+  from { transform: translateX(-50%) translate3d(-3%, -2%, 0) scale(1); }
+  to   { transform: translateX(-50%) translate3d(3%, 3%, 0) scale(1.08); }
+}
+
+:root[data-theme] .hero h1 {
+  color: #ffffff;
+  font-size: clamp(2.6rem, 1.4rem + 5vw, 4.6rem);
+  line-height: 1.04;
+  max-width: 16ch;
+}
+.hero h1::after { display: none; }
+:root[data-theme] .hero .tagline { color: #d3e0f5; font-size: clamp(1.1rem, 1rem + 0.6vw, 1.4rem); line-height: 1.6; max-width: 36rem; }
+
+.hero .sl-link-button.primary {
+  background: var(--gold); color: var(--navy-deep); border-color: var(--gold);
+  font-weight: 700; border-radius: 999px; padding: 0.9rem 1.8rem;
+  box-shadow: 0 8px 24px rgba(242, 182, 50, 0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+.hero .sl-link-button.primary:hover {
+  background: #ffc94d; transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(242, 182, 50, 0.5);
+}
+
+/* ---- Topic cards: lift, glow and a colour bar that draws in ------------------ */
+.card-grid { gap: 1.1rem; }
+.sl-link-card {
+  position: relative; overflow: hidden;
+  background: #ffffff;
+  border: 1px solid var(--sl-color-hairline);
+  border-radius: 14px;
+  padding: 1.3rem 1.5rem;
+  box-shadow: 0 1px 2px rgba(11, 29, 51, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.sl-link-card::after {
+  content: ""; position: absolute; inset: 0 0 auto 0; height: 4px;
+  background: linear-gradient(90deg, var(--gold), var(--royal));
+  transform: scaleX(0); transform-origin: left;
+  transition: transform 0.4s ease;
+}
+.sl-link-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--sl-color-accent);
+  box-shadow: 0 18px 40px rgba(27, 52, 120, 0.14);
+}
+.sl-link-card:hover::after { transform: scaleX(1); }
+.sl-link-card .title { font-family: var(--font-display); font-weight: 700; font-size: 1.15rem; color: var(--navy-deep); }
+:root[data-theme='dark'] .sl-link-card { background: #101b30; }
+:root[data-theme='dark'] .sl-link-card .title { color: #fff; }
+
+/* ---- Callouts ------------------------------------------------------------
+   :::tip[...]      gold   -> "Key takeaway"
+   :::note[...]     blue   -> "Shop example"
+   :::caution[...]  amber  -> "Watch out"
+   :::danger[...]   red    -> serious warnings
+   -------------------------------------------------------------------------- */
+.starlight-aside {
+  border-radius: 12px;
+  border-width: 0 0 0 5px;
+  box-shadow: 0 6px 20px rgba(11, 29, 51, 0.06);
+}
+:root[data-theme='light'] .starlight-aside--tip {
+  --sl-color-asides-text-accent: #6b4f00;
+  background-color: var(--gold-soft); border-color: var(--gold); color: var(--navy-deep);
+}
+:root[data-theme='light'] .starlight-aside--note {
+  --sl-color-asides-text-accent: #1b3478;
+  background-color: #eef2fb; border-color: var(--royal); color: var(--navy-deep);
+}
+:root[data-theme='light'] .starlight-aside--caution {
+  --sl-color-asides-text-accent: #8a4b00;
+  background-color: #fff1e0; border-color: #e08a00; color: var(--navy-deep);
+}
+:root[data-theme='light'] .starlight-aside--danger {
+  --sl-color-asides-text-accent: #9b1f17;
+  background-color: #fcefed; border-color: #c8372d; color: var(--navy-deep);
+}
+
+/* ---- Tables --------------------------------------------------------------- */
+.sl-markdown-content table {
+  display: block; overflow-x: auto; max-width: 100%;
+  border-radius: 12px; border: 1px solid var(--sl-color-hairline);
+}
+.sl-markdown-content thead th { background: var(--sl-color-accent-low); }
+
+/* ---- Previous / next buttons ------------------------------------------------ */
+.pagination-links a {
+  border-radius: 14px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.pagination-links a:hover { transform: translateY(-3px); box-shadow: 0 14px 30px rgba(27, 52, 120, 0.12); }
+
+/* ---- Sidebar polish --------------------------------------------------------- */
+.sidebar-content a { border-radius: 8px; transition: background 0.2s ease, color 0.2s ease; }
+
+/* ---- Smooth page-to-page fade (supported browsers only) -------------------- */
+@view-transition { navigation: auto; }
+::view-transition-old(root), ::view-transition-new(root) { animation-duration: 0.35s; }
+
+/* ---- Gentle fade-and-rise as sections scroll into view (supported browsers only) */
+@supports (animation-timeline: view()) {
+  .sl-link-card, .starlight-aside, .sl-markdown-content > .sl-heading-wrapper, .sl-markdown-content table {
+    animation: rise linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 30%;
+  }
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(22px); }
+    to   { opacity: 1; transform: none; }
+  }
+}
+
+/* ---- Respect people who prefer less motion ----------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  @view-transition { navigation: none; }
+}
