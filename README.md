@@ -16,8 +16,6 @@ Information Systems 171 · Belgium Campus iTversity
 
 <br>
 
-**Designed and developed - [Shakeel Khan](https://github.com/ShakeelK-Hub)**
-
 </div>
 
 <br>
