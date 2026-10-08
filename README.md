@@ -1,49 +1,68 @@
-# Starlight Starter Kit: Basics
+# DIGITAL INFORMATION SYSTEMS PLATFORM
 
-[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
+<p align="center">
+  <br>
+  <strong>A DIGITAL RESOURCE FOR INFORMATION SYSTEMS</strong>
+  <br><br>
+  <sub>Information Systems 171 · Belgium Campus iTversity</sub>
+  <br><br>
+</p>
 
-```
-npm create astro@latest -- --template starlight
-```
+<p align="center">
+  <a href="https://astro.build/">
+    <img src="https://img.shields.io/badge/Astro-0C0C0C?style=for-the-badge&logo=astro&logoColor=white" alt="Astro">
+  </a>
+  <a href="https://starlight.astro.build/">
+    <img src="https://img.shields.io/badge/Starlight-0C0C0C?style=for-the-badge&logo=astro&logoColor=white" alt="Starlight">
+  </a>
+  <a href="https://www.markdownguide.org/">
+    <img src="https://img.shields.io/badge/Markdown-0C0C0C?style=for-the-badge&logo=markdown&logoColor=white" alt="Markdown">
+  </a>
+</p>
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+<br>
 
-## 🚀 Project Structure
+> **A documentation-first platform for organising, presenting, and exploring concepts within Digital Information Systems.**
 
-Inside of your Astro + Starlight project, you'll see the following folders and files:
+---
 
-```
-.
-├── public/
-├── src/
-│   ├── assets/
-│   ├── content/
-│   │   └── docs/
-│   └── content.config.ts
-├── astro.config.mjs
-├── package.json
-└── tsconfig.json
-```
+## THE PROJECT
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+Digital Information Systems Platform is a web-based project developed for **Information Systems 171** at **Belgium Campus iTversity**.
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+The project takes course material beyond the boundaries of a conventional document and places it within a structured digital environment.
 
-Static assets, like favicons, can be placed in the `public/` directory.
+Information is organised into dedicated topics and documentation pages, creating a platform that can be **read, navigated, expanded, and maintained** as the project develops.
 
-## 🧞 Commands
+The intention is not simply to display information.
 
-All commands are run from the root of the project, from a terminal:
+It is to create a **usable information resource** around that information.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+<br>
 
-## 👀 Want to learn more?
+---
 
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+## 01 — PROJECT DIRECTION
+
+The platform is built around a simple idea:
+
+> **Information becomes more useful when it is structured well.**
+
+A documentation-oriented approach makes it possible to separate the **content** from the underlying application.
+
+This creates a system where:
+
+```text
+CONTENT
+   │
+   ▼
+STRUCTURE
+   │
+   ▼
+DOCUMENTATION
+   │
+   ▼
+NAVIGATION
+   │
+   ▼
+ACCESSIBLE INFORMATION
