@@ -8,6 +8,9 @@ export default defineConfig({
 		starlight({
 			title: '[Site name]',
 			customCss: ['./src/styles/custom.css'],
+			components: {
+				PageTitle: './src/components/PageTitle.astro',
+			},
 			sidebar: [
 				{
 					label: 'Data and information management',

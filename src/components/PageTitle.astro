@@ -1,0 +1,43 @@
+---
+// Replaces Starlight's plain page title with a "chapter" header.
+// Chapter number comes from the page's URL, so no extra frontmatter is needed.
+const { entry } = Astro.locals.starlightRoute;
+const data = entry.data;
+const isHome = data.template === 'splash';
+
+const chapters = [
+  ['/data-information', 1],
+  ['/ethics-popia', 2],
+  ['/ai-decision-support', 3],
+  ['/enterprise-integration', 4],
+  ['/adapting-systems', 5],
+];
+const path = Astro.url.pathname.replace(/\/$/, '');
+const match = chapters.find(([prefix]) => path.startsWith(prefix));
+const chapter = match ? match[1] : null;
+const deepDive = path.startsWith('/data-information');
+---
+
+{
+  isHome ? (
+    <span class="ds-home-flag" hidden />
+  ) : (
+    <header class="ds-chapter-head">
+      {chapter && (
+        <span class="ds-chapter-num" aria-hidden="true">
+          {String(chapter).padStart(2, '0')}
+        </span>
+      )}
+      <div class="ds-chapter-text">
+        {chapter && (
+          <p class="ds-chapter-kicker">
+            Chapter {chapter}
+            {deepDive && <span class="ds-stamp">Deep dive</span>}
+          </p>
+        )}
+        <h1 id="_top" data-page-title set:html={data.title} />
+        {data.description && <p class="ds-chapter-lede">{data.description}</p>}
+      </div>
+    </header>
+  )
+}
