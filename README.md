@@ -1,68 +1,105 @@
-# DIGITAL INFORMATION SYSTEMS PLATFORM
+# Digital Information Systems Platform
 
 <p align="center">
-  <br>
-  <strong>A DIGITAL RESOURCE FOR INFORMATION SYSTEMS</strong>
-  <br><br>
-  <sub>Information Systems 171 · Belgium Campus iTversity</sub>
-  <br><br>
+  <img src="https://img.shields.io/badge/ASTRO-000000?style=flat-square&logo=astro&logoColor=white" alt="Astro">
+  <img src="https://img.shields.io/badge/STARLIGHT-000000?style=flat-square&logo=astro&logoColor=white" alt="Starlight">
+  <img src="https://img.shields.io/badge/MARKDOWN-000000?style=flat-square&logo=markdown&logoColor=white" alt="Markdown">
+  <img src="https://img.shields.io/badge/STATUS-IN%20DEVELOPMENT-000000?style=flat-square" alt="Status">
 </p>
 
 <p align="center">
-  <a href="https://astro.build/">
-    <img src="https://img.shields.io/badge/Astro-0C0C0C?style=for-the-badge&logo=astro&logoColor=white" alt="Astro">
-  </a>
-  <a href="https://starlight.astro.build/">
-    <img src="https://img.shields.io/badge/Starlight-0C0C0C?style=for-the-badge&logo=astro&logoColor=white" alt="Starlight">
-  </a>
-  <a href="https://www.markdownguide.org/">
-    <img src="https://img.shields.io/badge/Markdown-0C0C0C?style=for-the-badge&logo=markdown&logoColor=white" alt="Markdown">
-  </a>
+  <strong>A modern, documentation-first information platform.</strong>
+</p>
+
+<p align="center">
+  Built from the ground up for <strong>Information Systems 171</strong> at
+  <strong>Belgium Campus iTversity</strong>.
 </p>
 
 <br>
 
-> **A documentation-first platform for organising, presenting, and exploring concepts within Digital Information Systems.**
+<p align="center">
+  <a href="https://github.com/ShakeelK-Hub/Digital-Information-Systems-Platform">Repository</a>
+  &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="#overview">Overview</a>
+  &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="#technology">Technology</a>
+  &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="#development">Development</a>
+</p>
 
 ---
 
-## THE PROJECT
+<br>
 
-Digital Information Systems Platform is a web-based project developed for **Information Systems 171** at **Belgium Campus iTversity**.
+## 01 — OVERVIEW
 
-The project takes course material beyond the boundaries of a conventional document and places it within a structured digital environment.
+**Digital Information Systems Platform** is a web-based information resource designed, developed, and structured by **Shakeel Khan** as part of the **Information Systems 171** module.
 
-Information is organised into dedicated topics and documentation pages, creating a platform that can be **read, navigated, expanded, and maintained** as the project develops.
+The project takes academic information and turns it into a **purpose-built digital platform** rather than presenting the material as a conventional document.
 
-The intention is not simply to display information.
+The result is a structured environment where information can be:
 
-It is to create a **usable information resource** around that information.
+- organised into logical sections
+- accessed through clear navigation
+- presented in a consistent interface
+- expanded as additional content is introduced
+- maintained independently from the underlying application
+
+> **The objective was not simply to publish information.**
+>
+> **It was to build a better way of presenting it.**
 
 <br>
 
 ---
 
-## 01 — PROJECT DIRECTION
+## 02 — WHAT I BUILT
 
-The platform is built around a simple idea:
+This project was built from the ground up around a documentation-first architecture.
 
-> **Information becomes more useful when it is structured well.**
+I designed the project structure, established the documentation environment, organised the content model, configured the application, and developed the platform around the requirements of the module.
 
-A documentation-oriented approach makes it possible to separate the **content** from the underlying application.
+### The platform brings together
 
-This creates a system where:
+| Area | Implementation |
+|:--|:--|
+| **Information Architecture** | Structured topics and documentation |
+| **User Experience** | Clear navigation and readable content hierarchy |
+| **Content System** | Markdown-based documentation |
+| **Web Platform** | Astro |
+| **Documentation Layer** | Starlight |
+| **Project Structure** | Maintainable, content-focused architecture |
+| **Development** | Local development, testing and production builds |
+
+<br>
+
+---
+
+## 03 — WHY THIS APPROACH
+
+Traditional academic work often ends as a document.
+
+This project takes a different approach.
 
 ```text
-CONTENT
-   │
-   ▼
-STRUCTURE
-   │
-   ▼
-DOCUMENTATION
-   │
-   ▼
-NAVIGATION
-   │
-   ▼
-ACCESSIBLE INFORMATION
+TRADITIONAL APPROACH
+
+Information
+     ↓
+Document
+     ↓
+Submit
+
+
+THIS PROJECT
+
+Information
+     ↓
+Structure
+     ↓
+Documentation
+     ↓
+Web Platform
+     ↓
+Explore · Navigate · Maintain · Expand
