@@ -5,7 +5,7 @@ import starlight from "@astrojs/starlight";
 export default defineConfig({
   integrations: [
     starlight({
-      title: " Axios Information Systems",
+      title: "Digital IS Platform",
       customCss: ["./src/styles/custom.css"],
       components: {
         PageTitle: "./src/components/PageTitle.astro",
