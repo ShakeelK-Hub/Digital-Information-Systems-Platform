@@ -1,59 +1,78 @@
 ---
 title: Dashboards and visualisation
-description: "[Lede: one or two sentences on what the reader will understand after this page]"
+description: Learn how dashboards summarise retail performance and help managers identify trends and exceptions.
 sidebar:
   order: 3
 ---
 
-import { Steps } from '@astrojs/starlight/components';
-
 ## Why this matters
 
-[Why this topic matters to a shop owner or staff member. Two short paragraphs.]
+Retail businesses collect more information than an owner can easily review transaction by transaction. A dashboard presents selected measures in one place, helping the owner monitor performance and identify where further investigation is needed.
+
+A useful dashboard is designed around specific decisions. It should highlight meaningful measures, make comparisons understandable and avoid overwhelming the reader with unnecessary charts. Research on dashboards in performance management discusses their role in presenting information for monitoring and decision-making. [[5]](/sources/#ref-5)
 
 :::tip[Key takeaway]
-[The one thing a busy reader should remember from this topic.]
+A dashboard should help answer a business question, not merely display as many figures and charts as possible.
 :::
 
 ## Key concepts
 
-[Explain the main idea in plain language. Cite sources like this: [[1]](/sources/#ref-1)]
+### What is a dashboard?
 
-### [Concept heading]
+A dashboard is a visual summary of selected measures, trends and indicators. A retail dashboard might show daily sales, stock levels, low-stock alerts, returns and best-selling products.
 
-[Paragraph explaining the concept.]
+A dashboard does not automatically explain why a result occurred. It helps the owner identify a pattern or exception that may require investigation.
 
-## Example from our shop
+### Choosing useful measures
 
-:::note[Shop example]
-[Use the shared fictional shop here. Name it, give realistic numbers, show the problem and what changes.]
-:::
+Measures should connect to a business goal.
+
+| Business question                  | Possible measure                                     |
+| ---------------------------------- | ---------------------------------------------------- |
+| Are sales improving?               | Sales by day or week                                 |
+| Which products sell most?          | Units sold by product or category                    |
+| Which items may run out?           | Current stock compared with reorder level            |
+| Are returns increasing?            | Return rate over time                                |
+| Are online orders being fulfilled? | Orders awaiting dispatch and average fulfilment time |
+
+### Four levels of analytics
+
+1. **Descriptive:** What happened? For example, weekly sales by product.
+2. **Diagnostic:** Why might it have happened? For example, investigating why sales declined.
+3. **Predictive:** What might happen next? For example, estimating demand from historical sales.
+4. **Prescriptive:** What action could be considered? For example, comparing reorder quantities under different budget limits.
+
+More advanced analytics require suitable data and methods. A small business can begin with descriptive reporting before considering predictive or prescriptive tools.
+
+## Example from the shop
+
+The owner notices that sales of a popular shirt have increased over the last three weeks, while the current stock level is low. The dashboard highlights the change and allows the owner to inspect sales by size.
+
+The owner checks physical stock and supplier lead times before placing an order. The dashboard identifies the issue, but the final action still depends on the wider business context.
 
 ## Practical steps
 
-<Steps>
-
-1. [Action the owner can take]
-
-2. [Action the owner can take]
-
-3. [Action the owner can take]
-
-</Steps>
+1. Start with two or three important business questions.
+2. Choose measures that directly relate to those questions.
+3. Confirm that the underlying records are accurate and current.
+4. Use clear labels, suitable chart types and consistent time periods.
+5. Compare results over time or against a meaningful target.
+6. Decide who will review the dashboard and what action may follow.
+7. Remove measures that do not help users understand performance or make decisions.
 
 ## Trade-offs
 
-| [Option] | [Benefit] | [Cost or risk] | [Best when] |
-| --- | --- | --- | --- |
-| [Option A] | [ ] | [ ] | [ ] |
-| [Option B] | [ ] | [ ] | [ ] |
-| [Option C] | [ ] | [ ] | [ ] |
+| Option                                   | Benefit                         | Cost or risk                           | Suitable when                                     |
+| ---------------------------------------- | ------------------------------- | -------------------------------------- | ------------------------------------------------- |
+| Regular spreadsheet report               | Familiar and inexpensive        | Requires manual preparation            | The business has limited reporting needs          |
+| Dashboard in an existing business system | Can bring key measures together | May require configuration and training | The system already stores suitable data           |
+| Advanced analytics platform              | Supports more complex analysis  | Higher cost and data requirements      | The business has a clear need and sufficient data |
 
 :::caution[Watch out]
-[A common mistake or risk specific to small retail businesses.]
+A sudden change in a chart does not always mean business performance has changed. Check for missing transactions, different reporting periods, stock adjustments or other factors that could explain the result.
 :::
 
 ## Sources for this topic
 
-1. [Source used on this page. The full reference is on the Sources page.]
-2. [Source used on this page.]
+- [Yigitbasioglu and Velcu: Dashboards in performance management](/sources/#ref-5)
+- [Batini et al.: Data quality assessment and improvement](/sources/#ref-1)

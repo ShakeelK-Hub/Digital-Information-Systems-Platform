@@ -1,59 +1,79 @@
 ---
 title: Practical guide
-description: "[Lede: one or two sentences on what the reader will understand after this page]"
+description: Follow a practical process for improving retail data quality and using information to support better decisions.
 sidebar:
   order: 4
 ---
 
-import { Steps } from '@astrojs/starlight/components';
+import { Steps } from "@astrojs/starlight/components";
 
 ## Why this matters
 
-[Why this topic matters to a shop owner or staff member. Two short paragraphs.]
+A small business does not need to replace every system at once to improve its information management. It can begin by identifying one recurring problem, checking the records involved and introducing a repeatable process to reduce errors.
+
+The aim is to make business information more trustworthy and useful. Improvements to data quality can support better reporting and reduce the risk of decisions being made from incomplete or inconsistent records. [[1]](/sources/#ref-1)
 
 :::tip[Key takeaway]
-[The one thing a busy reader should remember from this topic.]
+Start with a specific business problem, improve the relevant data and measure whether the change produces a better result.
 :::
 
-## Key concepts
-
-[Explain the main idea in plain language. Cite sources like this: [[1]](/sources/#ref-1)]
-
-### [Concept heading]
-
-[Paragraph explaining the concept.]
-
-## Example from our shop
-
-:::note[Shop example]
-[Use the shared fictional shop here. Name it, give realistic numbers, show the problem and what changes.]
-:::
-
-## Practical steps
+## A practical improvement process
 
 <Steps>
 
-1. [Action the owner can take]
+1. **Identify the problem.** Choose a recurring issue such as incorrect stock balances, missing sales records or slow weekly reporting.
 
-2. [Action the owner can take]
+2. **Trace the information.** Find where the relevant data is created, stored, changed and used.
 
-3. [Action the owner can take]
+3. **Check the quality.** Look for missing values, duplicates, outdated records and differences between systems.
+
+4. **Find the cause.** Determine whether the problem comes from manual entry, unclear procedures, system limitations or delayed updates.
+
+5. **Introduce a control.** Standardise product codes, validate entries, assign record ownership or introduce regular reconciliation.
+
+6. **Test the change.** Compare results before and after the improvement using a clear measure, such as the number of stock discrepancies.
+
+7. **Review regularly.** Monitor recurring problems and adjust the process as the business changes.
 
 </Steps>
 
+## Example from the shop
+
+The owner finds that stock discrepancies are causing popular sizes to sell out unexpectedly. The shop starts with a physical count of high-demand items, compares the count with the recorded balances and investigates the largest differences.
+
+Staff then use consistent product codes and record returns promptly. The owner reviews discrepancies weekly to see whether the new process is working.
+
+## Quick self-check
+
+- [ ] Is the business problem clearly defined?
+- [ ] Are the relevant data sources known?
+- [ ] Have missing or conflicting records been investigated?
+- [ ] Does someone own the process for maintaining the data?
+- [ ] Is there a clear measure for checking improvement?
+- [ ] Will the process be reviewed again?
+
+## Choosing the next step
+
+| Current situation                    | Sensible next step                                                 |
+| ------------------------------------ | ------------------------------------------------------------------ |
+| Records are inaccurate or incomplete | Improve data quality and clarify data-entry procedures             |
+| Reports take too long to prepare     | Standardise reporting and consider a simple dashboard              |
+| Different systems disagree           | Reconcile records and investigate integration options              |
+| Managers cannot see important trends | Identify key measures and build a focused dashboard                |
+| The business is considering AI       | Confirm that data is reliable and define a specific use case first |
+
 ## Trade-offs
 
-| [Option] | [Benefit] | [Cost or risk] | [Best when] |
-| --- | --- | --- | --- |
-| [Option A] | [ ] | [ ] | [ ] |
-| [Option B] | [ ] | [ ] | [ ] |
-| [Option C] | [ ] | [ ] | [ ] |
+Improving existing spreadsheets and procedures may be inexpensive, but it depends on staff following the process consistently. Automated validation and integrated systems can reduce manual work, but they require suitable configuration, training and maintenance.
+
+The right approach depends on the scale of the problem, the available budget and the business's ability to maintain the solution.
 
 :::caution[Watch out]
-[A common mistake or risk specific to small retail businesses.]
+Do not automate a process before understanding why it produces errors. Automation can make a flawed process faster without making its results more reliable.
 :::
 
 ## Sources for this topic
 
-1. [Source used on this page. The full reference is on the Sources page.]
-2. [Source used on this page.]
+- [Batini et al.: Data quality assessment and improvement](/sources/#ref-1)
+- [Pipino, Lee and Wang: Data quality assessment](/sources/#ref-3)
+- [DeHoratius and Raman: Inventory record inaccuracy](/sources/#ref-2)

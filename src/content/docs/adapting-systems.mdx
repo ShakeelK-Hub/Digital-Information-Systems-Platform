@@ -1,57 +1,158 @@
 ---
 title: Adapting and customising information systems
-description: "[Lede: one or two sentences on what the reader will understand after this page]"
+description: Learn how SMEs can configure, customise and integrate information systems to fit their specific business needs.
 ---
 
-import { Steps } from '@astrojs/starlight/components';
+import { Steps } from "@astrojs/starlight/components";
 
 ## Why this matters
 
-[Why this topic matters to a shop owner or staff member. Two short paragraphs.]
+Every small business has its own processes, priorities, budget and technical capabilities. An information system that works well for one retailer may not suit another. Digital transformation therefore involves more than buying software: the system must support the organisation's actual needs.
+
+Adapting a system can improve the way employees manage stock, process orders, prepare reports and communicate information. However, unnecessary customisation can increase costs and make the system harder to maintain. SMEs should identify the problem first and select the simplest sustainable way to solve it. [18]
 
 :::tip[Key takeaway]
-[The one thing a busy reader should remember from this topic.]
+Understand the business requirement, use standard features and configuration where possible, and customise only when a specific need justifies the additional cost and responsibility.
 :::
 
 ## Key concepts
 
-[Explain the main idea in plain language. Cite sources like this: [[1]](/sources/#ref-1)]
+### Understanding organisational needs
 
-### [Concept heading]
+Before choosing or modifying a system, the business should examine how its current processes work.
 
-[Paragraph explaining the concept.]
+A small retailer might struggle with inaccurate stock records, disconnected online orders, slow reporting or repeated manual data entry. The owner and staff should identify:
+
+- What problem needs to be solved?
+- Which tasks and processes are affected?
+- Who will use the system?
+- What information must the system provide?
+- What security and privacy requirements apply?
+- How will the business measure whether the change has worked?
+
+These requirements provide a basis for comparing software options and avoiding features that add complexity without solving a genuine problem.
+
+### Configuration versus customisation
+
+Configuration and customisation both help a system fit business requirements, but they work differently.
+
+**Configuration** means changing settings and options already provided by the software. Examples include:
+
+- Creating product categories and variants.
+- Setting stock thresholds and notifications.
+- Configuring user permissions.
+- Adjusting available tax or currency settings.
+- Choosing existing report layouts and workflows.
+
+Configuration is usually the first option to investigate because it can meet many requirements without changing the software's underlying code.
+
+**Customisation** means modifying or extending a system when its standard features and settings cannot meet an important requirement. Examples include developing a specialised report, adding a workflow or creating a feature that the existing software does not provide.
+
+Customisation can improve the fit between technology and business processes, but it may require development, testing, documentation and ongoing support. Changes can also create compatibility issues when the software is upgraded. [13] [19]
+
+### Integration as an alternative
+
+Sometimes the business does not need to customise either application. It needs to connect two existing systems.
+
+For example, a retailer might use a standard inventory system and a separate online storefront. If both support a suitable integration, connecting them may synchronise stock levels without developing a new inventory feature.
+
+The owner should compare configuration, integration and custom development before choosing an approach.
 
 ## Example from our shop
 
 :::note[Shop example]
-[Use the shared fictional shop here. Name it, give realistic numbers, show the problem and what changes.]
+Dube's Home and Fashion records stock in a spreadsheet while taking online orders through a separate storefront. Because the records are not updated together, staff sometimes sell products that are no longer available.
+
+The owner first checks whether the inventory system can be configured to track product sizes and colours, set low-stock alerts and assign staff permissions.
+
+The owner then investigates whether the inventory system and online storefront can exchange stock information through a supported integration. If the connection meets the requirement, it may solve the problem without bespoke development.
+
+A custom feature should be considered only if an important requirement cannot be met adequately through existing settings or a suitable integration.
 :::
 
-## Practical steps
+## Steps for adapting a system successfully
 
 <Steps>
 
-1. [Action the owner can take]
+1. **Assess current processes.** Map the tasks, delays, errors and information gaps the system should address. Consult the employees who perform the work.
 
-2. [Action the owner can take]
+2. **Define and prioritise requirements.** Separate essential needs from optional features. Include usability, reporting, privacy, security and operational requirements.
 
-3. [Action the owner can take]
+3. **Evaluate available options.** Compare existing software, built-in features and supported integrations. Consider the total cost of ownership rather than only the initial purchase price.
+
+4. **Configure before customising.** Use standard settings where they meet the requirement. Justify custom development against a clear business benefit.
+
+5. **Prepare data and test.** Back up and clean existing records. Test normal transactions, exceptions, permissions and integration behaviour before full deployment.
+
+6. **Train employees and introduce the change.** Explain the new process, provide practical training and consider a small pilot before a complete rollout.
+
+7. **Monitor and improve.** Check whether the change reduced errors, saved time or improved reporting. Adjust settings and workflows when evidence shows that improvement is needed.
 
 </Steps>
 
-## Trade-offs
+## Benefits and trade-offs
 
-| [Option] | [Benefit] | [Cost or risk] | [Best when] |
-| --- | --- | --- | --- |
-| [Option A] | [ ] | [ ] | [ ] |
-| [Option B] | [ ] | [ ] | [ ] |
-| [Option C] | [ ] | [ ] | [ ] |
+| Approach                     | Benefits                                             | Trade-offs                                                                              |
+| ---------------------------- | ---------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| Use standard features        | Lower complexity and generally easier support        | The business may need to adapt some processes to fit the software.                      |
+| Configure existing software  | Can meet common needs without bespoke code           | Limited to the available settings and workflows.                                        |
+| Integrate separate systems   | Allows existing applications to exchange information | Requires compatible systems, testing and ongoing monitoring.                            |
+| Customise or extend a system | Can support specialised workflows and requirements   | May increase development costs, maintenance, security considerations and upgrade risks. |
+
+SMEs should consider the total cost of ownership, including subscriptions, setup, data migration, staff training, integration, support and future upgrades.
+
+Staff involvement also matters. A technically successful change may fail to deliver its intended benefits if employees cannot use the system properly or must rely on informal workarounds.
+
+## Practical considerations
+
+### Security and privacy
+
+System changes can affect who accesses information and how it is shared. Review user permissions, data flows, backups and third-party services whenever a system is configured, customised or integrated.
+
+Personal information should be handled in accordance with applicable privacy requirements, including POPIA where relevant.
+
+### Testing and documentation
+
+Before introducing a change, test typical transactions and less common situations such as returns, cancellations, stock adjustments and failed synchronisation.
+
+Document important settings, integrations and custom features. This helps future staff and support providers understand how the system works and reduces the risk of a change disrupting an existing process.
+
+### Measuring success
+
+Define the expected result before implementation. Useful measures include:
+
+- Fewer stock discrepancies.
+- Less duplicate data entry.
+- Faster processing of orders.
+- More reliable reports.
+- Reduced time spent correcting errors.
+- Improved employee ability to complete routine tasks.
+
+Compare the results with the original situation rather than assuming that the change has succeeded because the new feature is working.
+
+## Trade-offs in a realistic SME
+
+A small retailer may be tempted to request a custom feature for every inconvenience. However, some issues are better addressed through training, process improvements or configuration.
+
+For example, if staff repeatedly enter inconsistent product names, a standard naming convention and required fields may solve the problem more simply than developing a new application.
+
+Custom development is more appropriate when a requirement is important, recurring and not adequately supported by existing features or integrations.
 
 :::caution[Watch out]
-[A common mistake or risk specific to small retail businesses.]
+Do not customise a system before understanding the underlying problem. Customising an inefficient process can make it more complicated and expensive without improving the business outcome.
 :::
+
+## Conclusion
+
+Adapting and customising information systems helps an SME make digital transformation relevant to its own operations rather than paying for technology that does not solve its problems.
+
+The business should start with clear requirements, use standard features and configuration where possible, and consider integration or customisation when a specific need justifies the additional effort. Careful testing, staff training, security and ongoing review help ensure that the system remains useful as the organisation changes.
 
 ## Sources for this topic
 
-1. [Source used on this page. The full reference is on the Sources page.]
-2. [Source used on this page.]
+1. Canhoto et al. (2021), on digital strategy and SMEs.
+2. Olson and Staley (2012), on ERP implementation in a small business.
+3. Haddara, Gøthesen and Langseth (2022), on cloud ERP adoption challenges.
+4. Venkatachalam et al. (2014), on SMEs and software as a service.
+
+See the [full reference list](/sources/) for publication details.

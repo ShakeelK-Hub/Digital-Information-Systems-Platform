@@ -1,59 +1,71 @@
 ---
 title: Information quality
-description: "[Lede: one or two sentences on what the reader will understand after this page]"
+description: Learn how to identify and improve inaccurate, incomplete and inconsistent retail records.
 sidebar:
   order: 2
 ---
 
-import { Steps } from '@astrojs/starlight/components';
-
 ## Why this matters
 
-[Why this topic matters to a shop owner or staff member. Two short paragraphs.]
+Business decisions are only as dependable as the information behind them. An incorrect stock balance can cause overselling, unnecessary orders or missed sales. Inaccurate records can also make it difficult to understand which products are performing well.
+
+Data quality should be managed as an ongoing business activity, not treated as a once-off spreadsheet cleanup. Research on data quality assessment highlights the need to evaluate information against the purpose for which it is used. [[1]](/sources/#ref-1) [[3]](/sources/#ref-3)
 
 :::tip[Key takeaway]
-[The one thing a busy reader should remember from this topic.]
+Before acting on a report, check whether the underlying data is accurate, complete, consistent, current and suitable for the decision.
 :::
 
-## Key concepts
+## Key dimensions of information quality
 
-[Explain the main idea in plain language. Cite sources like this: [[1]](/sources/#ref-1)]
+| Dimension    | Meaning                                | Retail example                                                        |
+| ------------ | -------------------------------------- | --------------------------------------------------------------------- |
+| Accuracy     | Records reflect what actually happened | The stock balance matches the physical count                          |
+| Completeness | Required fields or records are present | Each sale contains the necessary product and quantity details         |
+| Consistency  | Related records agree                  | The POS and inventory system show compatible stock figures            |
+| Timeliness   | Information is available when needed   | Recent sales are included in the replenishment report                 |
+| Validity     | Values follow expected rules           | A product quantity cannot be negative without an explained adjustment |
+| Uniqueness   | Unnecessary duplicates are avoided     | The same product is not accidentally registered under two SKUs        |
 
-### [Concept heading]
+## Common causes of poor data quality
 
-[Paragraph explaining the concept.]
+- Manual entry errors and inconsistent product names.
+- Duplicate product or customer records.
+- Sales, returns or transfers not recorded promptly.
+- Different systems using different product codes.
+- Outdated spreadsheets and unclear ownership of records.
+- Importing data without checking its format or completeness.
 
-## Example from our shop
+Inventory record inaccuracy has been examined in retail research, showing why recorded stock should not automatically be assumed to match physical stock. [[2]](/sources/#ref-2)
 
-:::note[Shop example]
-[Use the shared fictional shop here. Name it, give realistic numbers, show the problem and what changes.]
-:::
+## Example from the shop
 
-## Practical steps
+The shop's spreadsheet records 20 units of a shirt, while the POS system records 17. A physical count confirms 17. The owner checks recent transactions and finds that three returned units were not entered correctly.
 
-<Steps>
+The business should correct the affected records, document the adjustment and introduce a process for recording returns consistently. Simply changing the spreadsheet without investigating the cause could allow the discrepancy to happen again.
 
-1. [Action the owner can take]
+## Practical quality checks
 
-2. [Action the owner can take]
-
-3. [Action the owner can take]
-
-</Steps>
+1. **Standardise records:** use consistent product codes, names, date formats and measurement units.
+2. **Validate inputs:** apply suitable rules to required fields, quantities and codes.
+3. **Reconcile systems:** compare POS, stock and accounting records at defined intervals.
+4. **Investigate exceptions:** review unexpected balances, duplicates and missing transactions.
+5. **Assign ownership:** make it clear who maintains each important record.
+6. **Monitor quality:** track recurring errors and improve the process causing them.
 
 ## Trade-offs
 
-| [Option] | [Benefit] | [Cost or risk] | [Best when] |
-| --- | --- | --- | --- |
-| [Option A] | [ ] | [ ] | [ ] |
-| [Option B] | [ ] | [ ] | [ ] |
-| [Option C] | [ ] | [ ] | [ ] |
+| Approach                                   | Benefit                                       | Cost or risk                                   | Suitable when                               |
+| ------------------------------------------ | --------------------------------------------- | ---------------------------------------------- | ------------------------------------------- |
+| Manual checks                              | Simple and inexpensive to start               | Time-consuming and prone to human error        | The business has a small number of records  |
+| Spreadsheet validation                     | Improves consistency without major investment | Depends on correct setup and maintenance       | Data volumes are manageable                 |
+| System-based validation and reconciliation | Can identify problems more consistently       | Requires configuration and staff understanding | Records are spread across connected systems |
 
 :::caution[Watch out]
-[A common mistake or risk specific to small retail businesses.]
+Do not treat a report as reliable simply because it looks professional. A dashboard can display inaccurate data clearly and still lead to a poor decision.
 :::
 
 ## Sources for this topic
 
-1. [Source used on this page. The full reference is on the Sources page.]
-2. [Source used on this page.]
+- [Batini et al.: Data quality assessment and improvement](/sources/#ref-1)
+- [DeHoratius and Raman: Inventory record inaccuracy](/sources/#ref-2)
+- [Pipino, Lee and Wang: Data quality assessment](/sources/#ref-3)
