@@ -12,7 +12,7 @@ Information Systems 171 · Belgium Campus iTversity
 
 [![Astro](https://img.shields.io/badge/Astro-111111?style=flat-square&logo=astro&logoColor=FF5D01)](https://astro.build/)
 [![Starlight](https://img.shields.io/badge/Starlight-111111?style=flat-square&logo=astro&logoColor=FFFFFF)](https://starlight.astro.build/)
-[![Status](https://img.shields.io/badge/Status-Development-2563EB?style=flat-square)](#status)
+[![Status](https://img.shields.io/badge/Status-Deployed-2563EB?style=flat-square)](#status)
 
 <br>
 
